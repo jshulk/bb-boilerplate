@@ -48,8 +48,8 @@ exports.after = 'You should now install project dependencies with _npm ' +
  			
  			truncatedPath = dirs[src].replace(/bb-boilerplate\/root|\/.gitkeep/g, "");
 
- 			grunt.file.mkdir(join(destination, truncatedPath));
  			grunt.verbose.or.write("Writing " + truncatedPath.replace(/\//, "") + "..." );
+ 			grunt.file.mkdir(join(destination, truncatedPath));			
  			grunt.verbose.or.ok();
  			
  		}
